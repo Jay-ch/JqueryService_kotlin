@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.barchart.mpchartdemo.NewFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="组合图实现趋势图："/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@mipmap/tv_top_arrow_tcl"
+                    android:drawablePadding="3dp"
+                    android:gravity="right|center_vertical"
+                    android:text="TCL"
+                    android:textColor="@color/black99"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@mipmap/tv_top_arrow_trend"
+                    android:drawablePadding="3dp"
+                    android:gravity="right|center_vertical"
+                    android:text="趋势线"
+                    android:textColor="@color/black99"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <com.barchart.mpchartdemo.view.LineChartInViewPager
+                android:id="@+id/trend_lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="对比型平滑曲线："/>
+
+            <com.barchart.mpchartdemo.view.LineChartInViewPager
+                android:id="@+id/new_lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="数据正常饼状图："/>
+
+            <com.github.mikephil.chart_3_0_1v.charts.PieChart
+                android:id="@+id/new_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="数据不正常饼状图：（小于5%不显示）"/>
+
+            <com.github.mikephil.chart_3_0_1v.charts.PieChart
+                android:id="@+id/new_the_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="无X轴柱状图（X轴分类字符在柱状图上显示）："/>
+
+            <com.github.mikephil.chart_3_0_1v.charts.BarChart
+                android:id="@+id/new_the_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="X轴显示时间段的柱状图"/>
+
+            <com.github.mikephil.chart_3_0_1v.charts.BarChart
+                android:id="@+id/new_x_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="250dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

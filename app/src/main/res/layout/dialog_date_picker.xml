@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/date_picker_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/cancel"
+            android:textColor="@color/c_33"
+            android:textSize="@dimen/dp_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@color/c_33"
+            android:textSize="@dimen/dp_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/confirm"
+            android:textColor="@color/c_33"
+            android:textSize="@dimen/dp_15"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/date_picker_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp">
+
+        <com.jquery.service.android.widgets.PickerView
+            android:id="@+id/dpv_year"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/picker_view_height"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/c_ff42"
+            android:textSize="@dimen/date_unit_text_size" />
+
+        <com.jquery.service.android.widgets.PickerView
+            android:id="@+id/dpv_month"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/picker_view_height"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/c_ff42"
+            android:textSize="@dimen/date_unit_text_size" />
+
+        <com.jquery.service.android.widgets.PickerView
+            android:id="@+id/dpv_day"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/picker_view_height"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/c_ff42"
+            android:textSize="@dimen/date_unit_text_size" />
+
+        <com.jquery.service.android.widgets.PickerView
+            android:id="@+id/dpv_hour"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/picker_view_height"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_hour_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/hour"
+            android:textColor="@color/c_ff42"
+            android:textSize="@dimen/date_unit_text_size" />
+
+        <com.jquery.service.android.widgets.PickerView
+            android:id="@+id/dpv_minute"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/picker_view_height"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_minute_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/minute"
+            android:textColor="@color/c_ff42"
+            android:textSize="@dimen/date_unit_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

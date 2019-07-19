@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Do you really want to quit?"
+        android:textColor="@color/c_55"
+        android:textSize="16dp"
+        android:visibility="gone" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_pop_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_btn_select_left"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/sure"
+            android:textColor="@color/c_ff"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/middle_line"
+            style="@style/horizontal_line" />
+
+        <TextView
+            android:id="@+id/tv_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_btn_select_right"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/c_ff"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/line"
+            style="@style/horizontal_line" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_btn_select_right"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/c_ff"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/close_line"
+            style="@style/horizontal_line" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_btn_select_right"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/c_ff"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

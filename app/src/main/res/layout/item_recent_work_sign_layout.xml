@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_ff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16">
+
+        <RelativeLayout
+            android:id="@+id/rl_list_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_list_comm"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_55"
+                android:textSize="@dimen/dp_9"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_list_comm_perch"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_55"
+                android:textSize="@dimen/dp_9"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_list_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_list_comm"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_list_comm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:src="@drawable/home_recent_working_status"
+                android:textColor="@color/c_55" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center"
+                android:background="@color/c_ff42" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ll_list_comm"
+            android:text="2018.11.12  10:46:45"
+            android:textColor="@color/c_55"
+            android:textSize="@dimen/dp_10"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@id/ll_list_comm"
+            android:text="故障维修（完成）"
+            android:textColor="@color/c_55"
+            android:textSize="@dimen/dp_9"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</LinearLayout>

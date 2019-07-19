@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center"
+        android:height="@dimen/dp_37"
+        android:width="@dimen/dp_50">
+        <shape>
+            <solid android:color="@color/white" />  <!--此为距离左侧的距离，设置和背景一样的颜色-->
+        </shape>
+    </item>
+    <item
+        android:gravity="center|bottom"
+        android:width="@dimen/dp_30"
+        android:height="@dimen/dp_3"
+       >
+        <shape>
+            <solid android:color="@color/c_ff42" /> <!--此为divider的颜色-->
+        </shape>
+    </item>
+</layer-list>

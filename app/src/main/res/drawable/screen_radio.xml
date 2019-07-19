@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:state_checked="false"
+            android:drawable="@drawable/button_white_3_line" />
+        <item
+            android:state_checked="true"
+            android:drawable="@drawable/button_ora_3_line" />
+
+    <!--<item android:drawable="@drawable/button_white_3_line" android:state_enabled="false" />
+    <item android:drawable="@drawable/button_white_3_line" android:state_checked="false" />
+    <item android:drawable="@drawable/button_ora_3_line" android:state_checked="true" />-->
+
+</selector>
+

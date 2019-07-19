@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font="http://schemas.android.com/tools"
+    android:id="@+id/OverwriteLay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white_2_bg"
+        android:padding="@dimen/dp_10">
+
+        <LinearLayout
+            android:id="@+id/diaTitleLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <com.jquery.service.android.widgets.CustomFont
+                android:id="@+id/titleDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_20"
+                app:customFont="@string/font_gothic_bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diaTitleLay"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/hori_partition"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_centerHorizontal="true"
+                android:src="@color/c_d7" />
+
+            <LinearLayout
+                android:id="@+id/linearLay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.jquery.service.android.widgets.CustomFont
+                    android:id="@+id/yes"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.45"
+                    android:background="@drawable/selector_btn_bg"
+                    android:gravity="center"
+                    android:text="是"
+                    android:textColor="@color/black"
+                    app:customFont="@string/font_gothic" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:src="@color/c_d7" />
+
+                <com.jquery.service.android.widgets.CustomFont
+                    android:id="@+id/no"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.45"
+                    android:background="@drawable/selector_btn_bg"
+                    android:gravity="center"
+                    android:text="否"
+                    android:textColor="@color/black"
+                    app:customFont="@string/font_gothic_bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/linearLay" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

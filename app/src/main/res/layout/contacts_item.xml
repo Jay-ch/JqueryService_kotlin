@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_contacts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:layout_marginRight="@dimen/dp_15"
+    android:layout_marginTop="@dimen/dp_5"
+    android:background="@drawable/white_10_bg"
+    android:orientation="vertical">
+    <!--    android:background="@drawable/bg_white_10_bg"-->
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_15"
+        android:text="A"
+        android:textColor="#454545"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jquery.service.android.widgets.FrescoImageView
+            android:id="@+id/frienduri"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dp_13"
+            android:layout_marginLeft="20dp"
+            app:actualImageScaleType="fitCenter"
+            app:placeholderImage="@drawable/mine_crew_icon"
+            app:placeholderImageScaleType="fitCenter"
+            app:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_toRightOf="@id/frienduri"
+            android:gravity="center"
+            android:text="hhhh"
+            android:textColor="@color/c_33"
+            android:textSize="@dimen/dp_15"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bt_invitation_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_13"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/frienduri"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/frienduri"
+                    android:gravity="center|left"
+                    android:text="组织架构："
+                    android:textColor="@color/c_99"
+                    android:textSize="@dimen/dp_13" />
+
+                <TextView
+                    android:id="@+id/friendname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/friendname"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="西南大区"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_13" />
+
+                <TextView
+                    android:id="@+id/friendname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/friendname"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="左明洪分组"
+                    android:textColor="@color/c_99"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/frienduri"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="联系电话: "
+                    android:textColor="@color/c_99"
+                    android:textSize="@dimen/dp_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/friendname"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_weight="1"
+                    android:text="13666666666"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginRight="@dimen/dp_13"
+        android:background="@color/c_da" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_13"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="11月：发起了10件工程，完成了3件，7件未完成"
+        android:textColor="@color/c_33"
+        android:textSize="@dimen/dp_13" />
+
+
+</LinearLayout>

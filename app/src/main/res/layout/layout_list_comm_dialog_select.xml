@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:clickable="true"
+        android:drawableRight="@drawable/close"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/c_55"
+        android:textSize="@dimen/dp_16" />
+
+    <View
+        android:id="@+id/h_line"
+        style="@style/horizontal_line" />
+
+    <View style="@style/horizontal_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_comm_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:emptyDes="@string/empty_home_tips"
+        app:emptyIcon="@drawable/ic_empty_fault"
+        app:itemHeight="10" />
+
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_ff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_black_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/sure"
+            android:textColor="@color/c_ff"
+            android:textSize="@dimen/dp_14" />
+
+        <View
+            android:id="@+id/line"
+            style="@style/vertical_line" />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_black_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/cancel"
+            android:textColor="@color/c_ff"
+            android:textSize="@dimen/dp_14" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jquery.service.android">
+
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- USB权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.MANAGE_NEWLAND" />
+    <uses-permission android:name="android.permission.MANAGE_NEWLANDUART3" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+    <application
+        android:name="com.jquery.service.android.app.App"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 刘海屏 -->
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <!-- 刘海屏 -->
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5b889422f43e48326e0006e0" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="IC卡燃气充值" />
+
+        <!-- 百度定位 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="huT8GI9vEUGGHN1T2LfKNoDTaxnQ2QwB" />
+        <!-- 蒲公英必选-->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="a679b666fc1e169090db5038d0084d00"></meta-data>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <service android:name="com.jquery.service.android.service.DownloadServices" />
+        <!--
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zhihu.matisse.sample.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public"></meta-data>
+        </provider>
+        -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <provider
+            android:name="com.pgyersdk.PgyerProvider"
+            android:authorities="${applicationId}.com.pgyer.provider"
+            android:exported="false"/>
+
+        <activity android:name="com.jquery.service.android.ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jquery.service.android.ui.login.view.LoginActivity"
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait" />
+        <!--  android:theme="@style/ActivityTheme"-->
+        <activity
+            android:name="com.jquery.service.android.ui.MainActivity"
+            android:fitsSystemWindows="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--  android:fitsSystemWindows="true"-->
+        <!--  android:launchMode="singleTask"-->
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.SignRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.AddressBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.LiastreActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.ScanLifeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.FaultDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.Main"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.FaultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.SearchActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             <activity
+             android:name=".ui.home.view.NewFaultActivity"
+             android:screenOrientation="portrait" />
+        -->
+
+
+        <activity android:name="com.jquery.service.android.ui.home.view.NewFaultActivity" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.IndoorLocationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.jquery.service.android.permission.PermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.SignInActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.home.view.SignInCaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jquery.service.android.ui.admin.home.view.FaultConditionActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.jquery.service.android.ui.home.view.SelectionTimeActivity" />
+
+        <activity android:name="com.jquery.service.android.ui.home.view.StaffProfileActivity" />
+
+        <activity android:name="com.jquery.service.android.ui.PermissionArrayActivity"></activity>
+    </application>
+
+</manifest>

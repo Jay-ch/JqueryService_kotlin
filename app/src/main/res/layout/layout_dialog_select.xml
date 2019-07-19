@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/LinearLayoutCommonDialog"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:padding="@dimen/dp_14"
+        android:text="Do you really want to quit?"
+        android:textColor="@color/c_55"
+        android:textSize="@dimen/dp_16"/>
+
+    <View style="@style/horizontal_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tv_left"
+            style="@style/ComDialogButton"
+
+            android:text="@string/sure"
+            />
+
+        <Button
+            android:id="@+id/tv_right"
+            android:layout_marginLeft="@dimen/dp_30"
+            style="@style/ComDialogButton"
+            android:text="@string/cancel"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

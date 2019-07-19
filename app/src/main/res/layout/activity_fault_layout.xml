@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"></include>
+
+    <com.jquery.service.android.widgets.TopTitleBar
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightRes="@drawable/ic_search"
+        app:title="@string/corrective_maintenance" />
+
+    <!--   <RadioGroup
+           android:layout_alignParentTop="true"
+           android:padding="@dimen/dp_5"
+           android:id="@+id/rg"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_37"
+           android:background="@color/c_ff"
+           android:gravity="center|bottom"
+           android:orientation="horizontal">
+
+           <RadioButton
+               android:id="@+id/rb_untreated"
+               android:layout_width="@dimen/dp_50"
+               android:layout_height="wrap_content"
+               android:background="@drawable/border"
+               android:button="@null"
+               android:checked="true"
+               android:gravity="center"
+               android:text="@string/untreated_fault"
+               android:textColor="@drawable/color_radiobutton"
+               android:textSize="@dimen/dp_13" />
+
+           <RadioButton
+               android:id="@+id/rb_handled"
+               android:layout_width="@dimen/dp_50"
+               android:layout_height="wrap_content"
+               android:background="@drawable/border"
+               android:button="@null"
+               android:gravity="center"
+               android:text="@string/handled_fault"
+               android:textColor="@drawable/color_radiobutton"
+               android:textSize="@dimen/dp_13"
+               />
+       </RadioGroup>-->
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!--  <RadioButton
+              android:background="@android:color/transparent"
+              android:stateListAnimator="@null"
+              android:id="@+id/rb_home"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:button="@null"
+              android:drawableTop="@drawable/home_bg_selected"
+              android:gravity="center"
+              android:text="@string/tab_home"
+              android:textColor="@color/c_33"
+              android:textSize="@dimen/dp_10" />-->
+        <RadioButton
+            android:id="@+id/rb_untreated"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_13"
+            android:text="@string/untreated_fault"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="@dimen/dp_13" />
+
+        <RadioButton
+            android:id="@+id/rb_handled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_13"
+            android:text="@string/handled_fault"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="@dimen/dp_13" />
+
+        <!-- <RadioButton
+             android:stateListAnimator="@null"
+             android:id="@+id/rb_hot"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@android:color/transparent"
+             android:button="@null"
+             android:drawableTop="@drawable/hot_bg_selected"
+             android:gravity="center"
+             android:text="@string/recent"
+             android:textColor="@color/c_33"
+             android:textSize="@dimen/dp_10"
+             android:visibility="gone" />
+
+         <RadioButton
+             android:stateListAnimator="@null"
+             android:id="@+id/rb_mine"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@android:color/transparent"
+             android:button="@null"
+             android:drawableTop="@drawable/mine_bg_selected"
+             android:gravity="center"
+             android:text="@string/mine"
+             android:textColor="@color/c_33"
+             android:textSize="@dimen/dp_10" />-->
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_new_fault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selecttime_ora_frame"
+            android:focusable="false"
+            android:text="@string/new_fault"
+            android:textColor="@color/c_ff" />
+    </LinearLayout>
+</LinearLayout>

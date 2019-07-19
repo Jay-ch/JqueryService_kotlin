@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_20" />
+            <solid android:color="@color/c_f5" />
+        </shape>
+    </item>
+</selector>

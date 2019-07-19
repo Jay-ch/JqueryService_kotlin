@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <com.jquery.service.android.widgets.TopTitleBar
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_2a2d"
+        app:title="@string/tab_home" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:background="@color/c_ffea"
+                android:padding="@dimen/dp_6"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_home_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:drawableLeft="@drawable/relocation"
+                    android:text="@string/not_enabled_location"
+                    android:textColor="@color/c_00"
+                    android:textSize="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/tv_relocation"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_4"
+                    android:text="@string/relocation"
+                    android:textColor="@color/c_f72"
+                    android:textSize="@dimen/dp_9" />
+
+            </FrameLayout>
+
+            <View style="@style/horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:background="@drawable/shape_shadow_white"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_weight="5"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_14"
+                        android:text="@string/sign_state"
+                        android:textColor="@color/c_33"
+                        android:textSize="@dimen/dp_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:text="@string/sign_hint"
+                        android:textColor="@color/c_33"
+                        android:textSize="@dimen/dp_10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sign"
+                    android:layout_width="@dimen/dp_67"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_weight="1"
+                    android:background="@drawable/semicircle_40_round_ori"
+                    android:clickable="true"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:drawableLeft="@drawable/home_sign_icon"
+                        android:drawablePadding="@dimen/dp_20"
+                        android:gravity="center"
+                        android:text="@string/sign"
+                        android:textColor="@color/c_ff"
+                        android:textSize="@dimen/dp_10" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/admin_home_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/admin_home_rb_maintenance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@drawable/ic_admin_selected"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="@string/admin_my_status"
+                    android:textColor="@drawable/color_orange_text_selector"
+                    android:textSize="@dimen/dp_14" />
+
+                <RadioButton
+                    android:id="@+id/admin_home_rb_statistics"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/shape_transport_view"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="@string/admin_statistic"
+                    android:textColor="@drawable/color_orange_text_selector"
+                    android:textSize="@dimen/dp_14" />
+            </RadioGroup>
+
+            <com.jquery.service.android.widgets.AutoHeightViewPager
+                android:id="@+id/admin_home_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

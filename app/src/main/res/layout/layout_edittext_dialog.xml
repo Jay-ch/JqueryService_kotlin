@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="200dp"
+              style="@style/LinearLayoutCommonDialog">
+
+    <TextView
+        android:id="@+id/tv_common_edit_dialog_title"
+        style="@style/DialogTitleText"
+        android:text="@string/please_enter_password"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_common_edit_dialog_title"
+            style="@style/InfraredEditTextNumber"
+            android:gravity="left|center_vertical"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_20">
+
+        <Button
+            android:id="@+id/tv_common_edit_dialog_left"
+            style="@style/ComDialogButton"
+            android:text="@string/cancel"
+            />
+
+        <View
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_1"/>
+
+        <Button
+            android:id="@+id/tv_common_edit_dialog_right"
+            style="@style/ComDialogButton"
+            android:text="@string/save"
+            />
+        <!--@string/save-->
+    </LinearLayout>
+
+
+</LinearLayout>

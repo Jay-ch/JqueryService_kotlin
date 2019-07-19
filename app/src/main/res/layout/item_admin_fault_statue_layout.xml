@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dp_8"
+              android:layout_marginBottom="@dimen/dp_8"
+              android:layout_marginRight="@dimen/dp_5"
+              android:layout_marginLeft="@dimen/dp_5"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_item_epe_fault_name"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/bg_gray_15_bg"
+        android:gravity="center"
+        android:padding="@dimen/dp_4"
+        android:text="员工1号adsadasda"
+        android:textColor="@color/c_99"
+        android:textSize="@dimen/dp_12"
+        />
+
+
+    <TextView
+        style="@style/Text_14dp_C_f5"
+        android:layout_width="wrap_content"
+        android:text="@string/admin_add_fault"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_epe_fault_added"
+        style="@style/Text_14dp_C_f5"
+        android:text="8"
+        />
+
+    <TextView
+        style="@style/Text_14dp_C_f5"
+        android:text="@string/unit_piece_comma"
+        />
+
+    <TextView
+        style="@style/Text_14dp_C_f5"
+        android:text="@string/admin_added_fault_deal"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_epe_fault_deal"
+        style="@style/Text_14dp_C_f5"
+        android:text="4"
+        android:textColor="@color/c_99"
+        />
+
+    <TextView
+        style="@style/Text_14dp_C_f5"
+        android:text="@string/unit_piece_comma"
+        />
+
+    <TextView
+        style="@style/Text_14dp_C_f5"
+        android:text="@string/admin_added_fault_remain"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_epe_fault_remain"
+        style="@style/Text_14dp_C_f5"
+        android:text="4"
+        android:textColor="@color/c_ff42"
+        />
+
+    <TextView
+        style="@style/Text_14dp_C_f5"
+        android:text="@string/unit_piece"
+        />
+</LinearLayout>

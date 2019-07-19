@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_f8"
+        android:overScrollMode="never"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_mine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:layout_weight="1"
+                android:background="@drawable/shape_gradient">
+
+                <com.jquery.service.android.widgets.FrescoImageView
+                    android:id="@+id/image_avatar"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    app:actualImageScaleType="fitCenter"
+                    app:placeholderImage="@drawable/panda"
+                    app:placeholderImageScaleType="fitCenter"
+                    app:roundAsCircle="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_4"
+                        android:text="@string/unlogin_tips"
+                        android:textColor="@color/c_ff"
+                        android:textSize="@dimen/dp_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:text="@string/mine_tips"
+                        android:textColor="@color/c_ff"
+                        android:textSize="@dimen/dp_16"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:drawableRight="@drawable/mine_right_back"
+                    android:textColor="@color/c_ff"
+                    android:textSize="@dimen/dp_16"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/white_grey_btn"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/basic_function"
+                    style="@style/MineHomeText"
+                    android:text="@string/basic_function"
+                    android:textSize="@dimen/dp_14" />
+
+                <View style="@style/horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c_ff"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sign_record"
+                            style="@style/MineHomeText_horizontal"
+                            android:drawableTop="@drawable/mine_sign_record"
+                            android:text="@string/sign_record" />
+
+                        <TextView
+                            android:id="@+id/tv_sign_record_num"
+                            style="@style/red_text"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_address_book"
+                            style="@style/MineHomeText_horizontal"
+                            android:drawableTop="@drawable/mine_address_book"
+                            android:text="@string/address_book" />
+
+                        <TextView
+                            android:id="@+id/tv_address_book_num"
+                            style="@style/red_text"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_liastre"
+                            style="@style/MineHomeText_horizontal"
+                            android:drawableTop="@drawable/mine_liastre"
+                            android:text="@string/liastre" />
+
+                        <TextView
+                            android:id="@+id/tv_liastre_num"
+                            style="@style/red_text"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/white_grey_btn"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/management_function"
+                    style="@style/MineHomeText"
+                    android:text="@string/management_function"
+                    android:textSize="@dimen/dp_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c_ff"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sign_case"
+                            style="@style/MineHomeText_horizontal"
+                            android:drawableTop="@drawable/mine_sign_case"
+                            android:text="@string/sign_case" />
+
+                        <TextView
+                            android:id="@+id/tv_sign_case_num"
+                            style="@style/red_text"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_fault_condition"
+                            style="@style/MineHomeText_horizontal"
+                            android:drawableTop="@drawable/mine_fault"
+                            android:text="@string/fault_condition" />
+
+                        <TextView
+                            android:id="@+id/tv_fault_condition_num"
+                            style="@style/red_text"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_personnel_situation"
+                            style="@style/MineHomeText_horizontal"
+                            android:drawableTop="@drawable/mine_staff_profile"
+                            android:text="@string/personnel_situation" />
+
+                        <TextView
+                            android:id="@+id/tv_personnel_situation_num"
+                            style="@style/red_text"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:background="@drawable/white_grey_btn"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/system_setup"
+                    style="@style/MineHomeText"
+                    android:text="@string/system_setup"
+                    android:textSize="@dimen/dp_14" />
+
+                <View style="@style/horizontal_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c_ff"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_about"
+                            style="@style/MineHomeText_horizontal"
+                            android:drawableTop="@drawable/mine_about"
+                            android:text="@string/about" />
+
+                        <TextView
+                            android:id="@+id/tv_about_num"
+                            style="@style/red_text"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

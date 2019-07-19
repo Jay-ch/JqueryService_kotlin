@@ -1,0 +1,12 @@
+[
+  {
+    "id": 10001,
+    "title": "已完结",
+    "link": "http://api.nihongxiu.com/liveapi.article.list?category_id=10001"
+  },
+  {
+    "id": 10002,
+    "title": "未完结",
+    "link": "http://api.nihongxiu.com/liveapi.article.list?category_id=10002"
+  }
+]

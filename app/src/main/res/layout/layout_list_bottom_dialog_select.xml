@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_bottom_list_dialog_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="统计方式"
+        android:drawableRight="@drawable/close"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/c_55"
+        android:textSize="@dimen/dp_16" />
+
+    <View style="@style/horizontal_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_bottom_list_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:emptyDes="@string/empty_home_tips"
+        app:emptyIcon="@drawable/ic_empty_fault"
+        app:itemHeight="10" />
+
+
+
+</LinearLayout>

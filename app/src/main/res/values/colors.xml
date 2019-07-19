@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff7200</color>
+
+    <color name="status_bar_color">#000000</color>
+    <color name="toolbar_color">#48ca97</color>
+
+    <!-- button样式颜色   -->
+    <color name="button_red">#bce499</color>
+    <color name="button_red_pressed">#48ca97</color>
+    <color name="button_white_pressed">#eeeeee</color>
+    <color name="button_disabled">#d7d7d7</color>
+    <color name="button_red_text">#ffffff</color>
+    <color name="button_white_text">#636363</color>
+    <color name="button_red_pressed_text">#dcdcdc</color>
+    <color name="button_white_pressed_text">#636363</color>
+    <color name="button_disabled_text">#9a9a9a</color>
+
+    <color name="frame_gray">#888888</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#fcc3c3</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#EBEBEB</color>
+    <color name="gray_">#cccccc</color>
+    <color name="dark_red">#48ca97</color>
+    <color name="light_yellow">#FCA643</color>
+    <color name="red">#48ca97</color>
+    <color name="red_text">#48ca97</color>
+    <color name="blue">#0000aa</color>
+    <color name="notselected">#404040</color>
+    <color name="selected">#323232</color>
+    <color name="dark_gray">#8a8a8a</color>
+    <color name="dark_gray_border">#c9c9c9</color>
+    <color name="gray_guanzhu">#b0b0b0</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="light_black">#cc000000</color>
+    <color name="lightblack">#97000000</color>
+    <color name="gray_sharp">#888888</color>
+    <color name="green">#4CD964</color>
+    <color name="light_red">#ffff6845</color>
+    <color name="hint_gray">#ff999999</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="translucent_background">#5c000000</color>
+    <color name="deep_gray">#ff666666</color>
+    <color name="gray_white">#ffececec</color>
+    <color name="divgray">#ECECEC</color>
+    <color name="nul">#00000000</color>
+    <color name="brandtop">#ebebeb</color>
+    <color name="textdark">#3d3d3d</color>
+    <color name="textgrey">#5b5b5b</color>
+    <color name="textyellow">#ff6600</color>
+    <color name="textlight">#666666</color>
+    <color name="textlight_group_left">#333333</color>
+    <color name="textlight_group_right">#7a7a7a</color>
+    <color name="textltip">#a6a6a6</color>
+    <color name="nogroup">#F9F9F9</color>
+    <color name="group">#F3F3F3</color>
+    <color name="div">#DDDDDD</color>
+    <color name="orange">#FF6600</color>
+    <color name="orange_balance">#f16a26</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="second_background">#F2F2F2</color>
+    <color name="third_background">#DCDCDC</color>
+    <color name="bgcolor">#ffffff</color>
+    <color name="toolbar">#22292c</color>
+    <color name="nav_text">#f86300</color>
+    <color name="bg_pink">#fffbf3</color>
+
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="linearBottom">#C0C0C0</color>
+    <color name="text">#6D6D6D</color>
+    <color name="border">#d0d0d0</color>
+    <color name="textlightgray">#989898</color>
+    <color name="textdarkgray">#4c4c4c</color>
+    <color name="backgroundgray">#eaeaea</color>
+    <color name="textnormalgray">#666666</color>
+    <color name="cart_login">#FFFCEE</color>
+    <color name="chat_pink_normal">#bce499</color>
+    <color name="chat_pink_press">#48ca97</color>
+    <color name="lighter_gray">#f0f0f0</color>
+    <color name="gray_dark">#505050</color>
+    <color name="gray_darker">#545454</color>
+    <color name="red_price">#48ca97</color>
+    <!-- ui配色 -->
+    <color name="tv_coupon_amount">#5fbaf5</color>
+    <color name="lv_coupon">#bce499</color>
+    <color name="signintegral">#949494</color>
+    <color name="integral_plus">#48ca97</color>
+    <color name="integral_minus">#5f5f5f</color>
+    <color name="sign_integral_right_now">#ffffff</color>
+    <color name="get_coupon_success_textview">#5b5d61</color>
+    <color name="get_coupon_success_view">#e0e0e0</color>
+    <color name="get_coupon_success_detail_color">#c2c2c2</color>
+    <color name="get_coupon_success_go">#555555</color>
+    <color name="get_coupon_success_buy">#87889c</color>
+    <color name="get_coupon_success_item_name">#252525</color>
+    <color name="get_coupon_success_item_price">#48ca97</color>
+    <color name="user_integral_name">#333333</color>
+    <color name="user_integral_price">#5d5d5d</color>
+    <color name="foot_point_title_day">#a2a2a2</color>
+    <color name="foot_point_title_all">#d1d1d1</color>
+    <color name="user_center_information">#919191</color>
+    <color name="user_order_address">#979797</color>
+    <color name="express_address_background">#f8f8f8</color>
+    <color name="express_address_detail">#525252</color>
+    <color name="express_address_button">#565656</color>
+    <color name="user_center_information_change">#ececec</color>
+    <color name="cancel_color">#bce499</color>
+    <color name="integral_index">#c7c7c7</color>
+    <color name="integral_index_select">#898989</color>
+    <color name="integral_index_background">#fdf8f5</color>
+    <color name="time_text">#cdcdcd</color>
+    <color name="consult_title">#414141</color>
+    <color name="consult_detail">#969595</color>
+    <color name="complain_detail_select_theme">#969595</color>
+    <color name="complain_detail_back_ground">#e4e4e4</color>
+    <color name="complain_picture_text_color">#48ca97</color>
+    <color name="complain_status_text_color">#707070</color>
+    <color name="complain_time_text_color">#b7b7b7</color>
+    <color name="complain_conversation_username">#515151</color>
+    <color name="complain_conversation_time">#adadad</color>
+    <color name="complain_conversation_datail">#818181</color>
+    <color name="complain_conversation_seller">#48ca97</color>
+    <color name="listview_deliver_color">#e5e5e5</color>
+    <color name="integral_title_detail">#b3b3b3</color>
+    <color name="integral_time_detail">#686868</color>
+    <color name="integral_background">#48ca97</color>
+    <!--查看评价界面颜色-->
+    <color name="evaluate_bg_white">#ffffff</color>
+    <color name="evaluate_list_bg_gray">#f5f5f5</color>
+    <color name="evaluate_line_gray">#eeeeee</color>
+    <color name="evaluate_solid_line_gray">#e1e1e1</color>
+    <color name="evaluate_tv_date_gray">#7c7c7c</color>
+    <color name="evaluate_tv_white">#2c2c2c</color>
+    <color name="evaluate_tv_content_head_gray">#a5a5a5</color>
+    <!--订单评价界面颜色-->
+    <color name="order_evaluate_white">#ffffff</color>
+    <color name="order_evaluate_name_gray">#494949</color>
+    <color name="order_evaluate_price_red">#48ca97</color>
+    <color name="order_evaluate_et_hint_gray">#9d9d9d</color>
+    <color name="order_evaluate_evaluate_gray">#545454</color>
+    <!--优惠券界面颜色-->
+    <color name="coupons_gray">#e2e2e2</color>
+    <color name="coupons_blue">#45abe8</color>
+    <color name="coupons_name_gray">#4e4e4e</color>
+    <color name="coupons_line_gray">#e1e1e1</color>
+    <color name="coupons_date_gray">#6b6b6b</color>
+    <color name="coupons_more_gray">#5f5f5f</color>
+    <!--零元购页面颜色-->
+    <color name="zero_use_txt_gray">#4f4f4f</color>
+    <color name="zero_use_txt_red">#48ca97</color>
+    <color name="zero_use_line_gray">#e2e2e2</color>
+    <!--地址管理-->
+    <color name="address_txt_gray">#939393</color>
+    <color name="address_et_gray">#313131</color>
+    <color name="address_et_hint_gray">#cdcdcd</color>
+    <color name="address_name">#313131</color>
+    <color name="address_address">#797979</color>
+    <color name="address_edit">#909090</color>
+    <!--商品规格dialog-->
+    <color name="dialog_price">#48ca97</color>
+    <color name="dialog_tv">#2c2c2c</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    <color name="dialog_txt">#cdcdcd</color>
+    <color name="divider_line">#e7e7e7</color>
+
+
+    <color name="group_shopping_transport">#eef0f0f0</color>
+    <color name="group_shopping_sale">#a1a1a1</color>
+    <color name="group_shopping_line_gray">#e3e3e3</color>
+    <color name="group_life_background">#80000000</color>
+    <color name="group_life_rmb_red">#48ca97</color>
+    <color name="group_life_price_red">#48ca97</color>
+    <color name="group_life_price_gray">#cfcfcf</color>
+    <color name="group_life_return">#48ca97</color>
+    <color name="group_life_sale_num">#909090</color>
+
+    <color name="transparent_background">#66000000</color>
+
+    <!--云购文字颜色-->
+    <color name="cloud_text_grey">#ababab</color>
+    <color name="cloud_text_g">#ababab</color>
+    <color name="cloud_line_g">#c6c6c6</color>
+    <color name="cloud_text_blue">#2468b0</color>
+    <color name="cloud_text_blue_past">#4270be</color>
+    <color name="cloud_text_red_past">#48ca97</color>
+
+
+    <color name="color_light_blue">#00DDB6</color>
+    <color name="txt_color">#48495F</color>
+    <color name="item_bg">#FFFFFF</color>
+    <color name="bg">#F0F0F0</color>
+    <color name="spinner_bg">#333244</color>
+    <color name="new_text_color">#555771</color>
+    <color name="white_text_color">#F0F0F0</color>
+    <color name="gray_color">#4b4b58</color>
+    <color name="hard_color">#48495f</color>
+    <color name="clickspan_color">#00ddb6</color>
+    <color name="dull_blue">#3B4BBF</color>
+    <color name="store_class">#6f6f6f</color>
+    #7bc933
+    <color name="add_to_Cart">#fdd000</color>
+    <color name="recommend_qr_codes">#261b17</color>
+
+    <color name="toolbar_line">#f894a5</color>
+    <item name="parting_line" type="color">#ededed</item>
+    <color name="search_text_hint_color">#c8c8c8</color>
+    <color name="text_black">#464646</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_search">#efdfd6</color>
+
+
+    <color name="mainColor">#573567</color>
+
+    <color name="font_gray_b">#d4d4d3</color>
+
+    <color name="font_tab_1">#42369a</color>
+    <color name="font_tab_0">#b1b1b1</color>
+
+
+    <color name="font_common_1">#424242</color>
+    <color name="font_common_2">#a1a1a1</color>
+    <color name="font_blue">#42369a</color>
+
+    <color name="font_green">#00cccc</color>
+
+    <color name="commom_background">#f3f3f3</color>
+
+    <color name="red_background">#ff0000</color>
+    <color name="desccolor">#2D241F</color>
+    <color name="desccolorbg">#CF1F2A</color>
+    <color name="logincolorbg">#48ca97</color>
+    <color name="light_gray_new">#F5F5F5</color>
+    <color name="order_red_envelope">#ff8900</color>
+    <color name="user_feedback_bg">#fbfbfb</color>
+
+
+    <!-- 列表分割线   色值#999999 -->
+    <color name="list_divider">#999999</color>
+    <!-- 选中态色块   色值#D7D7D7 -->
+    <color name="list_item_pressed">#D7D7D7</color>
+    <!-- 白色 -->
+    <color name="ivory">#fffff0</color>
+    <!-- 象牙色 -->
+    <color name="lightyellow">#ffffe0</color>
+    <color name="capture_text_cover_bg">#3060a4e3</color>
+
+    <!-- 黄色 -->
+    <color name="snow">#fffafa</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#fffaf0</color>
+    <!-- 花白色 -->
+    <color name="lemonchiffon">#fffacd</color>
+    <!-- 柠檬绸色 -->
+    <color name="cornsilk">#fff8dc</color>
+    <!-- 米绸色 -->
+    <color name="seaShell">#fff5ee</color>
+    <!-- 海贝色 -->
+    <color name="lavenderblush">#fff0f5</color>
+    <!-- 淡紫红 -->
+    <color name="papayawhip">#ffefd5</color>
+    <!-- 番木色 -->
+    <color name="blanchedalmond">#ffebcd</color>
+    <!-- 白杏色 -->
+    <color name="mistyrose">#ffe4e1</color>
+    <!-- 浅玫瑰色 -->
+    <color name="bisque">#ffe4c4</color>
+    <!-- 桔黄色 -->
+    <color name="moccasin">#ffe4b5</color>
+    <!-- 鹿皮色 -->
+    <color name="navajowhite">#ffdead</color>
+    <!-- 纳瓦白 -->
+    <color name="peachpuff">#ffdab9</color>
+    <!-- 桃色 -->
+    <color name="gold">#ffd700</color>
+    <!-- 金色 -->
+    <color name="pink">#ffc0cb</color>
+    <!-- 粉红色 -->
+    <color name="lightpink">#ffb6c1</color>
+    <!-- 橙色 -->
+    <color name="lightsalmon">#ffa07a</color>
+    <!-- 亮肉色 -->
+    <color name="darkorange">#ff8c00</color>
+    <!-- 暗桔黄色 -->
+    <color name="coral">#ff7f50</color>
+    <!-- 珊瑚色 -->
+    <color name="hotpink">#ff69b4</color>
+    <!-- 热粉红色 -->
+    <color name="tomato">#ff6347</color>
+    <!-- 西红柿色 -->
+    <color name="orangered">#ff4500</color>
+    <!-- 红橙色 -->
+    <color name="deeppink">#ff1493</color>
+    <!-- 深粉红色 -->
+    <color name="fuchsia">#ff00ff</color>
+    <!-- 紫红色 -->
+    <color name="magenta">#ff00ff</color>
+    <!-- 红色 -->
+    <color name="oldlace">#fdf5e6</color>
+    <!-- 老花色 -->
+    <color name="lightgoldenrodyellow">#fafad2</color>
+    <!-- 亮金黄色 -->
+    <color name="linen">#faf0e6</color>
+    <!-- 亚麻色 -->
+    <color name="antiquewhite">#faebd7</color>
+    <!-- 古董白 -->
+    <color name="salmon">#fa8072</color>
+    <!-- 鲜肉色 -->
+    <color name="ghostwhite">#f8f8ff</color>
+    <!-- 幽灵白 -->
+    <color name="mintcream">#f5fffa</color>
+    <!-- 薄荷色 -->
+    <color name="whitesmoke">#f5f5f5</color>
+    <!-- 烟白色 -->
+    <color name="beige">#f5f5dc</color>
+    <!-- 米色 -->
+    <color name="wheat">#f5deb3</color>
+    <!-- 浅黄色 -->
+    <color name="sandybrown">#f4a460</color>
+    <!-- 沙褐色 -->
+    <color name="azure">#f0ffff</color>
+    <!-- 天蓝色 -->
+    <color name="honeydew">#f0fff0</color>
+    <!-- 蜜色 -->
+    <color name="aliceblue">#f0f8ff</color>
+    <!-- 艾利斯兰 -->
+    <color name="khaki">#f0e68c</color>
+    <!-- 黄褐色 -->
+    <color name="lightcoral">#f08080</color>
+    <!-- 亮珊瑚色 -->
+    <color name="palegoldenrod">#eee8aa</color>
+    <!-- 苍麒麟色 -->
+    <color name="violet">#ee82ee</color>
+    <!-- 紫罗兰色 -->
+    <color name="darksalmon">#e9967a</color>
+    <!-- 暗肉色 -->
+    <color name="lavender">#e6e6fa</color>
+    <!-- 淡紫色 -->
+    <color name="lightcyan">#e0ffff</color>
+    <!-- 亮青色 -->
+    <color name="burlywood">#deb887</color>
+    <!-- 实木色 -->
+    <color name="plum">#dda0dd</color>
+    <!-- 洋李色 -->
+    <color name="gainsboro">#dcdcdc</color>
+    <!-- 淡灰色 -->
+    <color name="crimson">#dc143c</color>
+    <!-- 暗深红色 -->
+    <color name="palevioletred">#db7093</color>
+    <!-- 苍紫罗兰色 -->
+    <color name="goldenrod">#daa520</color>
+    <!-- 金麒麟色 -->
+    <color name="orchid">#da70d6</color>
+    <!-- 淡紫色 -->
+    <color name="thistle">#d8bfd8</color>
+    <!-- 蓟色 -->
+    <color name="lightgray">#d3d3d3</color>
+    <!-- 亮灰色 -->
+    <color name="lightgrey">#d3d3d3</color>
+    <!-- 亮灰色 -->
+    <color name="tan">#d2b48c</color>
+    <!-- 茶色 -->
+    <color name="chocolate">#d2691e</color>
+    <!-- 巧可力色 -->
+    <color name="peru">#cd853f</color>
+    <!-- 秘鲁色 -->
+    <color name="indianred">#cd5c5c</color>
+    <!-- 印第安红 -->
+    <color name="mediumvioletred">#c71585</color>
+    <!-- 中紫罗兰色 -->
+    <color name="silver">#c0c0c0</color>
+    <!-- 银色 -->
+    <color name="darkkhaki">#bdb76b</color>
+    <!-- 暗黄褐色 -->
+    <color name="rosybrown">#bc8f8f</color>
+    <!-- 褐玫瑰红 -->
+    <color name="mediumorchid">#ba55d3</color>
+    <!-- 中粉紫色 -->
+    <color name="darkgoldenrod">#b8860b</color>
+    <!-- 暗金黄色 -->
+    <color name="firebrick">#b22222</color>
+    <!-- 火砖色 -->
+    <color name="powderblue">#b0e0e6</color>
+    <!-- 粉蓝色 -->
+    <color name="lightsteelblue">#b0c4de</color>
+    <!-- 亮钢兰色 -->
+    <color name="paleturquoise">#afeeee</color>
+    <!-- 苍宝石绿 -->
+    <color name="greenyellow">#adff2f</color>
+    <!-- 黄绿色 -->
+    <color name="lightblue">#add8e6</color>
+    <!-- 亮蓝色 -->
+    <color name="darkgray">#a9a9a9</color>
+    <!-- 暗灰色 -->
+    <color name="darkgrey">#a9a9a9</color>
+    <!-- 暗灰色 -->
+    <color name="brown">#a52a2a</color>
+    <!-- 褐色 -->
+    <color name="sienna">#a0522d</color>
+    <!-- 赭色 -->
+    <color name="darkorchid">#9932cc</color>
+    <!-- 暗紫色 -->
+    <color name="palegreen">#98fb98</color>
+    <!-- 苍绿色 -->
+    <color name="darkviolet">#9400d3</color>
+    <!-- 暗紫罗兰色 -->
+    <color name="mediumpurple">#9370db</color>
+    <!-- 中紫色 -->
+    <color name="lightgreen">#90ee90</color>
+    <!-- 亮绿色 -->
+    <color name="darkseagreen">#8fbc8f</color>
+    <!-- 暗海兰色 -->
+    <color name="saddlebrown">#8b4513</color>
+    <!-- 重褐色 -->
+    <color name="darkmagenta">#8b008b</color>
+    <!-- 暗洋红 -->
+    <color name="darkred">#8b0000</color>
+    <!-- 暗红色 -->
+    <color name="blueviolet">#8a2be2</color>
+    <!-- 紫罗兰蓝色 -->
+    <color name="lightskyblue">#87cefa</color>
+    <!-- 亮天蓝色 -->
+    <color name="skyblue">#87ceeb</color>
+    <!-- 灰色 -->
+    <color name="grey">#7c7b7b</color>
+    <!-- 灰色 -->
+    <color name="olive">#808000</color>
+    <!-- 橄榄色 -->
+    <color name="purple">#800080</color>
+    <!-- 紫色 -->
+    <color name="maroon">#800000</color>
+    <!-- 粟色 -->
+    <color name="aquamarine">#7fffd4</color>
+    <!-- 碧绿色 -->
+    <color name="chartreuse">#7fff00</color>
+    <!-- 黄绿色 -->
+    <color name="lawngreen">#7cfc00</color>
+    <!-- 草绿色 -->
+    <color name="mediumslateblue">#7b68ee</color>
+    <!-- 中暗蓝色 -->
+    <color name="lightslategray">#778899</color>
+    <!-- 亮蓝灰 -->
+    <color name="lightslategrey">#778899</color>
+    <!-- 亮蓝灰 -->
+    <color name="slategray">#708090</color>
+    <!-- 灰石色 -->
+    <color name="slategrey">#708090</color>
+    <!-- 灰石色 -->
+    <color name="olivedrab">#6b8e23</color>
+    <!-- 深绿褐色 -->
+    <color name="slateblue">#6a5acd</color>
+    <!-- 石蓝色 -->
+    <color name="dimgray">#696969</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 暗灰色 -->
+    <color name="mediumaquamarine">#66cdaa</color>
+    <!-- 中绿色 -->
+    <color name="cornflowerblue">#6495ed</color>
+    <!-- 菊兰色 -->
+    <color name="cadetblue">#5f9ea0</color>
+    <!-- 军兰色 -->
+    <color name="darkolivegreen">#556b2f</color>
+    <!-- 暗橄榄绿 -->
+    <color name="indigo">#4b0082</color>
+    <!-- 靛青色 -->
+    <color name="mediumturquoise">#48d1cc</color>
+    <!-- 中绿宝石 -->
+    <color name="darkslateblue">#483d8b</color>
+    <!-- 暗灰蓝色 -->
+    <color name="steelblue">#4682b4</color>
+    <!-- 钢兰色 -->
+    <color name="royalblue">#4169e1</color>
+    <!-- 皇家蓝 -->
+    <color name="turquoise">#40e0d0</color>
+    <!-- 青绿色 -->
+    <color name="mediumseagreen">#3cb371</color>
+    <!-- 中海蓝 -->
+    <color name="limegreen">#32cd32</color>
+    <!-- 橙绿色 -->
+    <color name="darkslategray">#2f4f4f</color>
+    <!-- 暗瓦灰色 -->
+    <color name="darkslategrey">#2f4f4f</color>
+    <!-- 暗瓦灰色 -->
+    <color name="seagreen">#2e8b57</color>
+    <!-- 海绿色 -->
+    <color name="forestgreen">#228b22</color>
+    <!-- 森林绿 -->
+    <color name="lightseagreen">#20b2aa</color>
+    <!-- 亮海蓝色 -->
+    <color name="dodgerblue">#1e90ff</color>
+    <!-- 闪兰色 -->
+    <color name="midnightblue">#191970</color>
+    <!-- 中灰兰色 -->
+    <color name="aqua">#00ffff</color>
+    <!-- 浅绿色 -->
+    <color name="cyan">#00ffff</color>
+    <!-- 青色 -->
+    <color name="springgreen">#00ff7f</color>
+    <!-- 春绿色 -->
+    <color name="lime">#00ff00</color>
+    <!-- 酸橙色 -->
+    <color name="mediumspringgreen">#00fa9a</color>
+    <!-- 中春绿色 -->
+    <color name="darkturquoise">#00ced1</color>
+    <!-- 暗宝石绿 -->
+    <color name="deepskyblue">#00bfff</color>
+    <!-- 深天蓝色 -->
+    <color name="darkcyan">#008b8b</color>
+    <!-- 暗青色 -->
+    <color name="teal">#008080</color>
+    <!-- 绿色 -->
+    <color name="darkgreen">#006400</color>
+    <!-- 蓝色 -->
+    <color name="mediumblue">#0000cd</color>
+    <!-- 中兰色 -->
+    <color name="darkblue">#00008b</color>
+    <!-- 暗蓝色 -->
+    <color name="navy">#000080</color>
+    <!-- 黑色 -->
+    <!-- #2b4f6d 退改签 、选择配送信息中地址 文字的颜色值 -->
+    <!-- 通用颜色统一风格 -->
+    <color name="text_click">#0174E1</color>
+    <color name="table_background">#cbcbcb</color>
+    <color name="background">#eaeaea</color>
+    <color name="tab_main_color">#1e1d1d</color>
+    <color name="comm_bg">#eaeaea</color>
+    <!-- 加黑 -->
+    <color name="comm_text_black">#464646</color>
+    <!-- 常用左侧文字颜色 -->
+    <color name="comm_text_left">#3c3c3c</color>
+    <!-- 常用右侧文字颜色 -->
+    <color name="comm_text_right">#3c3c3c</color>
+    <color name="comm_text_red">#da1609</color>
+    <color name="comm_text_blue">#0f90e3</color>
+    <color name="comm_text_green">#66c058</color>
+    <color name="comm_text_yellow">#DAE532</color>
+    <color name="comm_button_blue">#0074E1</color>
+    <!-- 常用提示文字颜色 -->
+    <color name="comm_text_tips">#949494</color>
+    <!-- 分割线颜色 -->
+    <color name="comm_cutline">#c4c4c4</color>
+
+    <!-- 内容条目按下时的样式 -->
+    <color name="pressed_bg">#f2f2f2</color>
+    <color name="nopressed_bg">#fff</color>
+
+    <!-- 助手内容颜色 -->
+    <color name="title_content_color">#484848</color>
+    <color name="content_color">#7d7d7d</color>
+
+    <!-- 理财 -->
+    <color name="new_red">#D21A3E</color>
+    <color name="new_red_press">#B41131</color>
+    <color name="text_left">#646464</color>
+    <color name="text_right">#a1a1a1</color>
+    <color name="cutline_gray">#c4c4c4</color>
+    <color name="text_yellow">#b18500</color>
+    <color name="btn_bg_gray">#f7f7f7</color>
+    <color name="new_green">#00FF99</color>
+
+    <!-- 首页快捷菜单 -->
+    <color name="menu_item_bg">#f6f6f6</color>
+    <color name="text_tips">#929292</color>
+    <!-- 账户总览 -->
+    <color name="text_left_account">#464646</color>
+    <color name="text_bom_account">#464646</color>
+    <!-- 品质生活 商品列表 -->
+    <color name="text_price_red">#ed3b3b</color>
+    <color name="text_sold_greay">#b0b0b0</color>
+    <color name="text_title_black">#232323</color>
+    <!-- 帮助中心-常见问题 -->
+    <color name="text_question">#333333</color>
+    <color name="text_answer">#777777</color>
+
+    <color name="comm_card_bg">#ffffff</color>
+    <color name="grey_50">#fafafa</color>
+    <color name="grey_200">#eeeeee</color>
+    <color name="btn_blue">#0067db</color>
+    <color name="btn_blue_11">#110067db</color>
+    <!-- 右边菜单点击颜色 -->
+    <color name="right_menu_unpressed">#CDCEC9</color>
+    <color name="right_menu_pressed">#C3C3C3</color>
+    <color name="menu_item_press">#2e000000</color>
+    <color name="page_backgroup">#f2f2f2</color>
+    <!-- 灰色 -->
+    <color name="grey_color1">#333333</color>
+    <color name="grey_color2">#666666</color>
+    <color name="grey_color3">#999999</color>
+    <!-- 橙色 -->
+    <color name="orange_color">#de6838</color>
+
+    <!--背景颜色-->
+    <color name="background_color">#f6f6f6</color>
+    <color name="edittext_noenter_color">#f5f5f5</color>
+
+    <!--辅助色-->
+    <color name="support_yellow">#f9a340</color>
+    <color name="btn_unselect_color">#f4736e</color>
+
+    <!--分割线-->
+    <color name="splitline_color">#dddddd</color>
+
+    <!--文字-->
+    <color name="notice_text_color">#999999</color>
+    <color name="default_text_color">#666666</color>
+    <color name="main_black_text">#333333</color>
+    <color name="main_red_text">#e53e42</color>
+    <color name="main_white_text">#ffffff</color>
+    <color name="protocol_text">#3C68FE</color>
+    <color name="protocol_text_enable">#553C68FE</color>
+
+    <!--图标-->
+    <color name="abate_icon_color">#bbbbbb</color>
+    <color name="default_icon_color">#999999</color>
+    <color name="pressed_icon_color">#e53e42</color>
+
+    <!--CycleViewPager-->
+    <color name="cycle_image_bg">#44222222</color>
+    <color name="kj_hint_text">#282828</color>
+    <color name="invitation_friend_bg">#e69f12</color>
+    <color name="invitation_contacts_bg">#ff312e</color>
+    <color name="all_price_bg">#ff8700</color>
+
+    <color name="c_00">#000000</color>
+    <color name="c_f5">#f5f5f5</color>
+    <color name="c_fb">#fbfbfb</color>
+    <color name="c_e5">#e5e5e5</color>
+    <color name="c_ff">#ffffff</color>
+    <color name="c_31">#313131</color>
+    <color name="c_1b">#1b1b1b</color>
+    <color name="c_cc">#CC282828</color>
+    <color name="color_cc">#cccccc</color>
+    <color name="color_ee">#eeeeee</color>
+    <color name="c_50">#50000000</color>
+    <color name="c_fa">#E84D70</color>
+    <color name="color_99">#999999</color>
+    <color name="c_da">#dadada</color>
+    <color name="c_ec">#ec0f38</color>
+    <color name="c_fe">#FFEDFA</color>
+    <color name="c_f0c717">#f0c717</color>
+    <color name="c_fff500">#fff500</color>
+    <color name="c_afff500">#AAfff500</color>
+    <color name="c_acea634">#AAcea634</color>
+    <color name="c_d7">#D7D7D7</color>
+    <color name="c_75">#757575</color>
+    <color name="c_7f">#7f7f7f</color>
+    <color name="c_79">#797979</color>
+    <color name="shadow">#AA000000</color>
+    <color name="c_33">#333333</color>
+    <color name="c_55">#555555</color>
+    <color name="c_86">#868686</color>
+    <color name="c_99">#999999</color>
+    <color name="c_c2">#c2c2c2</color>
+    <color name="c_f0d28c">#F0D28C</color>
+    <color name="color_red">#F45D9E</color>
+    <color name="color_orange">#FFAE00</color>
+    <color name="color_purple">#9829EF</color>
+    <color name="c_500000">#50000000</color>
+    <color name="c_600000">#60000000</color>
+    <color name="c_300000">#30000000</color>
+    <color name="c_880000">#88000000</color>
+    <color name="c_aa0000">#88000000</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="read_card_hint_bg_color">#FDF6E4</color>
+    <color name="writing_card_hint_bg_color">#43B97C</color>
+    <color name="wx_pay_code_big_bg">#0044FF</color>
+    <color name="c_34f">#0034FF</color>
+    <color name="c_0056ff">#0056FF</color>
+    <color name="c_f72">#ff7200</color>
+    <color name="c_f0f">#F0F3EF</color>
+    <color name="c_66">#666666</color>
+    <color name="c_f8">#f8f8f8</color>
+    <color name="c_0042ff">#0042FF</color>
+
+    <color name="colorBasicWhite">#ffffff</color>
+    <color name="colorAutoDismissToast">#88000000</color>
+
+    <color name="colorPrimaryDarkTrans">#CCf57257</color>
+    <color name="color_title">#583FB2</color>
+    <color name="c_f42">#583FB2</color>
+
+
+
+
+
+  //charts color
+    <color name="greenLight">#1af10f</color>
+    <color name="blue_bg">#45a2ff</color>
+    <color name="blueLight">#7eb3ff</color>
+    <color name="blueLight2">#40a0ff</color>
+    <color name="blueLight1">#2e74ba</color>
+    <color name="btn_cm_bg_pressed">#eaeff4</color>
+    <color name="withe">#ffffff</color>
+    <color name="tv_cm_textColor">#5e5e5d</color>
+    <color name="gray1">#c1bdbd</color>
+    <color name="tab_text_selected">#ffffff</color>
+    <color name="whole_back">#eeeef0</color>
+
+    <color name="text_color">#666666</color>
+    <color name="title_bottom_line">#dfdfdf</color>
+    <color name="bg_loading">#f0f0f3</color>
+    <color name="dash_line">#D9D9D9</color>
+
+    <color name="color_channel_pressed">#f2f2f2</color>
+    <color name="text_33">#3B3B3B</color>
+    <color name="color_mine_line">#eeeef0</color>
+    <color name="black5e">#5e5e5d</color>
+    <color name="black33">#333333</color>
+    <color name="black66">#666666</color>
+    <color name="black99">#999999</color>
+    <color name="gray2">#f7868686</color>
+    <color name="gray3">#cccccc</color>
+    <color name="gray4">#999999</color>
+
+    <color name="view1_bg">#d2d2d2</color>
+    <color name="view2_bg">#eeeeee</color>
+    <color name="view3_bg">#f2f2f2</color>
+    <color name="view4_bg">#f5f5f5</color>
+
+    <color name="Layout_bg1">#F0F0F0</color>
+    <color name="Layout_bg2">#fafafa</color>
+    <color name="eeeeee">#eeeeee</color>
+    <color name="title_colcor">#F9F9F9</color>
+    <color name="backColorTransparent">#00363a53</color>
+
+    <!--用户权限概览页面，每个模块的颜色值-->
+
+    <!--用户权限概览页面，每个模块左边的颜色值-->
+
+    <!--wheel 的颜色值-->
+    <color name="whell_item_bg_select">#efefef</color>
+
+    <!--财务模块-->
+    <color name="financeTabBg">#f1f1f1</color>
+    <color name="financeBCNet">#ebfeff</color>
+    <color name="financeAll">#fdffe8</color>
+    <color name="financeLow80">#F03967</color>
+    <color name="financeGreat100">#12CD7C</color>
+    <color name="financeG80L100">#FAF038</color>
+    <color name="financeItemBg">#fafafa</color>
+
+    <color name="six18_red">#FF414E</color>
+    <color name="six18_cell_bg">#FFF5E0</color>
+
+    <color name="color_f6">#f6f6f6</color>
+    <color name="bar_grey">#393a3e</color>
+    <color name="color_fa">#fafafa</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_c51">#f94c51</color>
+    <color name="color_green">#43c117</color>
+
+    <color name="home_tab_normal">#BDBDBD</color>
+    <color name="home_tab_press">#303030</color>
+
+    <color name="textbg">#8F9AA8</color>
+    <color name="c_2a2d">#2a2d42</color>
+    <color name="c_ff42">#FF4200</color>
+    <color name="c_ffea">#FFEA95</color>
+
+    <!---->
+    <color name="text_blue_three">#0078FF</color>
+    <color name="c_f72_bg">#34ff7200</color>
+    <color name="c_f72_bg_press">#34fc4604</color>
+    <color name="red_light">#fd232a</color>
+    <color name="end_color">#ffff7200</color>
+    <color name="start_color">#ffff4200</color>
+    <color name="black_alpha_60">#4f000000</color>
+    <color name="yellow_alpha_3">#fffff9df</color>
+    <color name="gray_alpha_3">#fff8f8fa</color>
+    <color name="cace_alpha_3">#ffcaced9</color>
+    <color name="progress_bg">#ffe6d1</color>
+
+    <color name="gray_end_color">#E1E1E1</color>
+    <color name="gray_start_color">#DEDEDE</color>
+
+
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#59B29C</color>
+    <color name="date_picker_text_dark">#333333</color>
+
+    <color name="main_bg">#F0F0F0</color>
+    <color name="select_title_text">#B0B0B0</color>
+    <color name="current_time_bg">#FFFFFF</color>
+    <color name="current_time_text">#666666</color>
+    <color name="selected_time_text">#57C5E8</color>
+    <color name="c_f3">#f3f3f3</color>
+
+    <color name="c_ff0">#ff000000</color>
+    <color name="c_b0b">#7fB0B5BC</color>
+
+    <color name="c_80da">#80dadada</color>
+
+</resources>

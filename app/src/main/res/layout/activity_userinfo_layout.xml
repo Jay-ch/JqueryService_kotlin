@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"></include>
+
+    <com.jquery.service.android.widgets.TopTitleBar
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/edit_profile" />
+
+    <LinearLayout
+        android:id="@+id/userinfo_avatar"
+        style="@style/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_12"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/avatar"
+            android:textColor="@color/c_55"
+            android:textSize="@dimen/dp_16" />
+
+        <com.jquery.service.android.widgets.FrescoImageView
+            android:id="@+id/iv_userinfo_avatar"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            app:actualImageScaleType="centerCrop"
+            app:placeholderImage="@color/c_f5"
+            app:roundAsCircle="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_bind_weChat"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_25"
+            android:paddingBottom="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/text_bind_weChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bind_weChat"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_13" />
+
+            <com.jquery.service.android.widgets.MarqueeTextView
+                android:id="@+id/tv_bind_weChat"
+                style="@style/user_text_no_rightback"
+                android:text="已绑定"
+                android:textColor="@color/c_ff42"
+                android:textSize="@dimen/dp_13"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_username"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_25"
+            android:paddingBottom="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_13" />
+
+            <com.jquery.service.android.widgets.MarqueeTextView
+                android:id="@+id/tv_username"
+                style="@style/user_text_no_rightback"
+                android:text="肖邦"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_13"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gender"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_25"
+            android:paddingBottom="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_13" />
+
+            <TextView
+                android:id="@+id/userinfo_sex"
+                style="@style/user_text_no_rightback"
+                android:text="男"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_13"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:background="@color/c_99" />
+
+        <LinearLayout
+            android:id="@+id/ll_region"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_25"
+            android:paddingBottom="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/region"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_13" />
+
+            <com.jquery.service.android.widgets.MarqueeTextView
+                android:id="@+id/tv_region"
+                style="@style/user_text_no_rightback"
+                android:text="西南大区"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_13"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_group"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_25"
+            android:paddingBottom="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/text_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_13" />
+
+            <com.jquery.service.android.widgets.MarqueeTextView
+                android:id="@+id/tv_group"
+                style="@style/user_text_no_rightback"
+                android:text="四川片区"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_13"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_mobile"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_25"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_25"
+            android:paddingBottom="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/text_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_13" />
+
+            <com.jquery.service.android.widgets.MarqueeTextView
+                android:id="@+id/tv_mobile"
+                style="@style/user_text_no_rightback"
+                android:text="136****6666"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_13"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_exit"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/text_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:textColor="@color/c_55"
+                android:textSize="@dimen/dp_16" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

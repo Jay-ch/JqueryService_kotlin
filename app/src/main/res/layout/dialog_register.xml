@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/OverwriteLay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/diaTitleLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+            <EditText
+
+                android:id="@+id/password_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/abc_edit_text_material"
+                android:hint="@string/user_name"
+                android:imeActionLabel="@string/user_name"
+                android:imeOptions="actionDone"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+
+                android:id="@+id/password_confirm_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/abc_edit_text_material"
+                android:hint="@string/user_name"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/user_name"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/c_da"
+                android:textCursorDrawable="@null"
+                font:ignore="InvalidImeActionId" />
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/horiParTv"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/diaTitleLay"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingRight="5dp"-->
+        <!--android:src="@color/partition_color" />-->
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diaTitleLay"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/hori_partition"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:src="@color/c_ff" />
+
+            <LinearLayout
+                android:id="@+id/linearLay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.jquery.service.android.widgets.CustomFont
+                    android:id="@+id/cf_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.45"
+                    android:background="@drawable/dialog_btn_select_left"
+                    android:gravity="center"
+                    android:text="@string/sure"
+                    android:textColor="@color/black"
+                    app:customFont="@string/font_gothic_bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:src="@color/c_ff" />
+
+                <com.jquery.service.android.widgets.CustomFont
+                    android:id="@+id/cf_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.45"
+                    android:background="@drawable/dialog_btn_select_left"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    app:customFont="@string/font_gothic_bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@+id/linearLay" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

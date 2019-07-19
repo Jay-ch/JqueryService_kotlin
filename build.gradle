@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+buildscript {
+    ext.kotlin_version = '1.2.71'
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.6.0'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
+        maven {
+            url "https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master"
+        }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+

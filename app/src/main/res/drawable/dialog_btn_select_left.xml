@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="150" android:exitFadeDuration="150">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_title" />
+            <corners android:bottomLeftRadius="@dimen/dp_10" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_purple" />
+            <corners android:bottomLeftRadius="@dimen/dp_10" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_tab_height"
+        android:background="@color/c_ff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/back_arrow"
+            android:drawablePadding="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:textColor="@color/c_0042ff"
+            android:textSize="@dimen/dp_14" />
+
+        <com.jquery.service.android.widgets.ClearEditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginRight="@dimen/dp_58"
+            android:layout_weight="1"
+            android:background="@drawable/search_tv_bg"
+            android:drawableLeft="@drawable/ic_search"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:singleLine="true"
+            android:textColor="@color/c_86"
+            android:textColorHint="@color/c_99"
+            android:textSize="@dimen/dp_11" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_f8"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/launch_date"
+                android:textSize="@dimen/dp_11" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_start_retrieve_date_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/retrieve_date_icon"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_start_retrieve_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/tv_start_retrieve_date_icon"
+                    android:text="@string/time"
+                    android:textColor="@color/c_99"
+                    android:textSize="@dimen/dp_13" />
+
+
+                <TextView
+                    android:id="@+id/tv_selected_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_start_retrieve_day"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/tv_start_retrieve_date_icon"
+                    android:text="@string/time"
+                    android:textColor="@color/c_55"
+                    android:textSize="@dimen/dp_15"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/select_interval"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_15"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_closed"
+                android:textSize="@dimen/dp_11" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            style="@style/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_8">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_retrieve_date_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/retrieve_date_icon"
+                    android:gravity="center" />
+
+                <TextView
+
+                    android:id="@+id/tv_end_retrieve_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/tv_retrieve_date_icon"
+                    android:text="@string/time"
+                    android:textColor="@color/c_99"
+                    android:textSize="@dimen/dp_13" />
+
+
+                <TextView
+                    android:id="@+id/tv_selected_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_end_retrieve_day"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/tv_retrieve_date_icon"
+                    android:text="@string/time"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_15"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/select_interval"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_15"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/semicircle_0_round_ori"
+                android:focusable="false"
+                android:text="@string/confirm_retrieve"
+                android:textColor="@color/c_ff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

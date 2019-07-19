@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 第一种加载方式 -->
+    <!--<item android:drawable="@drawable/bg_tab_selected" android:state_checked="true" />-->
+    <!-- 第二种加载方式 -->
+    <item android:state_checked="true">
+        <!--  <layer-list>
+              &lt;!&ndash; 红色背景 &ndash;&gt;
+              <item>
+                  <color android:color="#E4007F" />
+              </item>
+              &lt;!&ndash; 白色背景 &ndash;&gt;
+              <item android:bottom="4dp" android:drawable="@android:color/white" />
+          </layer-list>-->
+        <layer-list >
+            <item >
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/c_ff42" />
+                </shape>
+            </item>
+
+            <item android:bottom="@dimen/dp_3" android:left="@dimen/dp_0" android:right="@dimen/dp_0" android:top="@dimen/dp_0">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/c_ff" />
+                </shape>
+            </item>
+
+           <!-- <item android:bottom="@dimen/dp_50" android:left="@dimen/dp_50" android:right="@dimen/dp_50" android:top="@dimen/dp_50">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/c_ff42" />
+                </shape>
+            </item>-->
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <!-- 红色背景 -->
+            <item>
+                <color android:color="#E4007F" />
+            </item>
+            <!-- 白色背景 -->
+            <item android:bottom="@dimen/dp_0" android:drawable="@android:color/white" />
+        </layer-list>
+    </item>
+</selector>

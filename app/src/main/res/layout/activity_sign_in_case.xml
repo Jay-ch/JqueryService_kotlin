@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"></include>
+
+    <com.jquery.service.android.widgets.TopTitleBar
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/sign_in_case" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/c_ff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/calendar_previous"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:rotation="0"
+            android:src="@drawable/back2" />
+
+
+        <TextView
+            android:id="@+id/tv_calendar_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="222"
+            android:textColor="@color/c_ff42"
+            android:textSize="@dimen/dp_17"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_calendar_today"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="今天"
+            android:textColor="@color/c_33"
+            android:textSize="@dimen/dp_14" />
+
+        <ImageView
+            android:id="@+id/calendar_next"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/back2" />
+    </LinearLayout>
+
+
+    <com.jquery.service.android.widgets.CommCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250"
+        android:background="@color/c_ff"
+        app:calendarTextSize="@dimen/dp_15"
+        app:isShowLunar="true"
+        app:isShowOtherMonth="false"
+        app:limitFutureMonth="true"
+        app:lunarTextSize="@dimen/dp_11"
+        app:selectColor="@color/c_ff42"
+        app:signIconErrorId="@drawable/record_error"
+        app:signIconSuccessId="@drawable/record_success"
+        app:signTextColor="@android:color/holo_green_dark"
+        app:weekTextColor="@color/c_33"
+        app:weekTextSize="@dimen/dp_13" />
+</LinearLayout>

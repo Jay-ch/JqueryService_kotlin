@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_tab_height"
+    android:background="@color/color_title"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textColor="@color/c_ff"
+        android:textSize="@dimen/dp_17"
+        android:drawablePadding="@dimen/dp_16"
+        android:gravity="center"
+        android:text="@string/pay_QR_code"
+        android:id="@+id/tv_back"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableLeft="@drawable/back" />
+
+    <TextView
+        android:id="@+id/include_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:textColor="@color/c_33"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone" />
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/c_e5" />
+
+</FrameLayout>

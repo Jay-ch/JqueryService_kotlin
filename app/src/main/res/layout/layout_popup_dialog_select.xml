@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:clickable="true"
+        android:drawableRight="@drawable/close"
+        android:id="@+id/tv_close"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:padding="@dimen/dp_14"
+        android:textColor="@color/c_55"
+        android:textSize="@dimen/dp_16" />
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:padding="@dimen/dp_14"
+        android:text="Do you really want to quit?"
+        android:textColor="@color/c_55"
+        android:textSize="@dimen/dp_16" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:background="@drawable/circle_pop_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_select_left"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/sure"
+            android:textColor="@color/c_ff"
+            android:textSize="@dimen/dp_14" />
+
+        <View
+            android:id="@+id/line"
+            style="@style/vertical_line" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_select_right"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/cancel"
+            android:textColor="@color/c_ff"
+            android:textSize="@dimen/dp_14" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

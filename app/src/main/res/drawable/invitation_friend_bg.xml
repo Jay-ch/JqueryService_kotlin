@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    - <!--  外边框颜色
+  -->
+    <solid android:color="@color/comm_bg" />
+    - <!--  外边框线宽度
+  -->
+    <stroke android:width="0dp" />
+    - <!--  圆角角度
+  -->
+    <corners android:radius="@dimen/dp_15" />
+    - <!--  边框内距离
+  -->
+    <padding
+        android:bottom="0dp"
+        android:left="@dimen/dp_10"
+        android:right="@dimen/dp_10" />
+    - <!--  内部颜色设置
+  -->
+    <!--<gradient-->
+    <!--android:angle="0"-->
+    <!--android:centerColor="#ed0b3b"-->
+    <!--android:endColor="#ffffff"-->
+    <!--android:startColor="#ffffff" />-->
+</shape>

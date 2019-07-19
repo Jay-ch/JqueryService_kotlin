@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cube_ptr="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"></include>
+
+    <com.jquery.service.android.widgets.TopTitleBar
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/sign_record" />
+
+    <LinearLayout
+        android:id="@+id/ll_date_change"
+        style="@style/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/time"
+            android:textColor="@color/c_33"
+            android:textSize="@dimen/dp_13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/c_ff42"
+            android:textSize="@dimen/dp_13" />
+
+        <TextView
+            android:id="@+id/tv_date_hint"
+            style="@style/user_text"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ip_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/c_ff"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gray_5_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_9">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textColor="@color/c_55"
+                android:textSize="@dimen/dp_13" />
+
+            <TextView
+                android:id="@+id/tv_sign_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sign_state"
+                android:textColor="@color/c_55"
+                android:textSize="@dimen/dp_13" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/c_55"
+                android:textSize="@dimen/dp_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+
+    <ImageView
+        android:id="@+id/iv_empty_order"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_empty_fault"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <com.jquery.service.android.widgets.CommRecyclerView
+            android:id="@+id/recycle_sign_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:emptyDes="@string/empty_home_tips"
+            app:emptyIcon="@drawable/ic_empty_order"
+            app:isShowTop="false"
+            app:itemType="3" />
+
+        <com.jquery.service.android.widgets.CustomeSwipeRefreshLayout
+            android:id="@+id/recyclerView_sign_record_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_ff"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="700"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.8">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sign_record_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_empty_fault"
+                android:textColor="@color/c_75"
+                android:textSize="@dimen/dp_12" />
+        </com.jquery.service.android.widgets.CustomeSwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_empty_fault"
+            android:textColor="@color/c_75"
+            android:textSize="@dimen/dp_12"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

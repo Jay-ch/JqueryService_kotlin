@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wheat"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_read1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_80"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_60"
+        android:background="@color/c_ff">
+
+        <RelativeLayout
+            android:id="@+id/rl_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_5_bg">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_8"
+                android:src="@drawable/code_header" />
+
+            <TextView
+                android:id="@+id/view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image"
+                android:layout_toRightOf="@+id/image"
+                android:gravity="center_vertical"
+                android:text="@string/pay_QR_code"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_image"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:background="@drawable/bg_white_5_bg">
+
+
+            <View
+                android:id="@+id/image1"
+                android:layout_width="25dp"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/dp_8"
+                android:background="#ff999999" />
+
+            <TextView
+                android:id="@+id/view_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image1"
+                android:layout_toRightOf="@+id/image1"
+                android:gravity="center_vertical"
+                android:text="@string/pay_QR_code_money"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="@dimen/dp_220"
+            android:layout_height="@dimen/dp_220"
+            android:layout_below="@+id/rl_image1"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_image2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_18"
+            android:background="@drawable/bg_white_5_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/code_header"
+                android:text="@string/pay_money"
+                android:textColor="@color/c_33" />
+
+            <TextView
+                android:id="@+id/view_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/image2"
+                android:layout_toRightOf="@+id/image2"
+                android:gravity="center_vertical"
+                android:text="@string/pay_QR_code"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_15" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

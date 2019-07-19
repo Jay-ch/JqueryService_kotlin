@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+//apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    defaultConfig {
+        applicationId "com.jquery.service.android"
+
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            //APP的build.gradle设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+    }
+
+    /*sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }*/
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["constraint"]
+
+  //  implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+//
+   // implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+
+    testImplementation rootProject.ext.dependencies["junit"]
+    androidTestImplementation rootProject.ext.dependencies["support-test-runner"]
+    androidTestImplementation rootProject.ext.dependencies["support-test-espresso"]
+    implementation rootProject.ext.dependencies["okhttp3-logging-interceptor"]
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation(rootProject.ext.dependencies["retrofit-adapter-rxjava2"]) {
+        exclude group: 'io.reactivex.rxjava2'
+    }
+    implementation rootProject.ext.dependencies["retrofit-converter-gson"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-components"]
+    implementation rootProject.ext.dependencies["multidex"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-rxlifecycle-kotlin"]
+    implementation rootProject.ext.dependencies["rxlifecycle2-android-rxlifecycle-kt"]
+    implementation rootProject.ext.dependencies["brvah"]
+    // Butter Knife
+    implementation rootProject.ext.dependencies["butterknife"]
+    kapt rootProject.ext.dependencies["butterknife-compiler"]
+    //bus
+    implementation rootProject.ext.dependencies["eventbus"]
+    implementation rootProject.ext.dependencies["flowlayout"]
+    implementation rootProject.ext.dependencies["wechat-sdk-android"]
+    //Banner
+    implementation rootProject.ext.dependencies["convenient-banner"]
+    implementation rootProject.ext.dependencies["youth-banner"]
+    //umeng
+    implementation rootProject.ext.dependencies["umeng-common"]
+    implementation rootProject.ext.dependencies["umeng-analytics"]
+    //fresco
+    implementation rootProject.ext.dependencies["facebook-fresco"]
+    implementation rootProject.ext.dependencies["facebook-imagepipeline-okhttp3"]
+    implementation rootProject.ext.dependencies["bingoogolapple-photopicker"]
+    implementation rootProject.ext.dependencies["bingoogolapple-baseadapter"]
+    implementation rootProject.ext.dependencies["bingoogolapple-flowlayout"]
+    implementation rootProject.ext.dependencies["bingoogolapple-qrcode-zxing"]
+    implementation rootProject.ext.dependencies["picasso"]
+    //弹性反弹:Facebook Rebound
+    implementation rootProject.ext.dependencies["rebound"]
+    implementation rootProject.ext.dependencies["picasso"]
+    implementation rootProject.ext.dependencies["mp-android-chart"]
+    //图片，视频，录音
+    implementation rootProject.ext.dependencies["EasyPopup"]
+    implementation rootProject.ext.dependencies["PictureSelector"]
+    implementation rootProject.ext.dependencies["droidsonroids"]
+    implementation rootProject.ext.dependencies["gyf-barlibrary"]
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation project(':ptr-lib')
+    //implementation rootProject.ext.dependencies["matisse"]
+    implementation rootProject.ext.dependencies["glide"]
+    annotationProcessor rootProject.ext.dependencies["glide-compiler"]
+    //串口
+    implementation files('libs/usbserial.jar')
+    //刘海屏
+    implementation rootProject.ext.dependencies["jessyan-autosize"]
+    //程序崩溃
+    implementation rootProject.ext.dependencies["customactivityoncrash"]
+    implementation files('libs/IndoorscapeAlbumPlugin.jar')
+    //时间选择
+    //implementation rootProject.ext.dependencies["PickerView"]
+    implementation rootProject.ext.dependencies["orhanobutlogger"]
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    api(rootProject.ext.dependencies["rxpermissions2"]) {
+        exclude module: 'rxjava'
+        exclude module: 'support-annotations'
+    }
+    //api rootProject.ext.dependencies['rxerrorhandler2']
+    implementation rootProject.ext.dependencies["pgyersdk"]
+    //Toast
+    implementation rootProject.ext.dependencies["toast"]
+}

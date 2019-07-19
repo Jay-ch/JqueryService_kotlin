@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_ff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/corrective_maintenance"
+            style="@style/HomeText"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:drawableLeft="@drawable/home_corrective_maintenance"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="@string/corrective_maintenance"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_6"
+        android:background="@drawable/shape_shadow_ooo"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_current_time_icon"
+                android:text="@string/sign_state"
+                android:textColor="@color/c_33"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:text="4月"
+                android:textColor="@color/c_f72"
+                android:textSize="@dimen/dp_12" />
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_orange_line"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1212"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:text="@string/handled_fault"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:text="@string/untreated_fault"
+                android:textColor="@color/c_33"
+                android:textSize="@dimen/dp_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@drawable/shape_shadow_gray"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_remind"
+                android:text="@string/sign_state"
+                android:textColor="@color/c_33"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="@string/home_fault_hint"
+                android:textColor="@color/c_f72"
+                android:textSize="@dimen/dp_10"
+                android:textStyle="bold" />
+
+            <com.jquery.service.android.widgets.VerticalScrollTextView
+                android:id="@+id/vertical_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:text="@string/home_handled_fault_hint"
+                android:textColor="@color/c_99"
+                android:textSize="@dimen/dp_10"
+                android:visibility="visible" />
+
+            <!-- <com.qwkrom.service.android.widgets.VerticalScrollTextView
+                 android:layout_weight="1"
+                 android:id="@+id/vertical_text"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:ellipsize="marquee"
+                 android:focusable="true"
+                 android:focusableInTouchMode="true"
+                 android:marqueeRepeatLimit="marquee_forever"
+                 android:scrollHorizontally="true"
+                 android:singleLine="true"
+                 android:textColor="@color/c_99"
+                 android:textSize="@dimen/dp_10" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/font_shape_shadow_gray"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/handled_fault"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:text="大竹林康庄美地B区4-12-4"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_10" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/font_shape_shadow_gray"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/handled_fault"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:text="大竹林康庄美地B区4-12-4"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_10" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/font_shape_shadow_gray"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/handled_fault"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:text="大竹林康庄美地B区4-12-4"
+                    android:textColor="@color/c_33"
+                    android:textSize="@dimen/dp_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_recent_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/c_ff"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_recent_work"
+            style="@style/HomeText"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:drawableLeft="@drawable/home_recent_work"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="@string/recent_work"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_ff">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_recent_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <com.jquery.service.android.widgets.HorizontalListView
+        android:id="@+id/list_menus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/c_ff"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

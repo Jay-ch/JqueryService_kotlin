@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_f5"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fl_mine"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:background="@drawable/ic_header_bg">
+
+                <com.jquery.service.android.widgets.FrescoImageView
+                    android:id="@+id/image_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    app:actualImageScaleType="fitCenter"
+                    app:placeholderImage="@drawable/ic_default_avatar"
+                    app:placeholderImageScaleType="fitCenter"
+                    app:roundAsCircle="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/unlogin_tips"
+                        android:textColor="@color/c_55"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c_55"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:id="@+id/layout_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_btn"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/layout_mine_integral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_grey_btn"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前任务"
+                    android:textColor="@color/c_33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mine_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="0"
+                    android:textColor="@color/color_red"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mine_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_grey_btn"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未完成任务"
+                    android:textColor="@color/c_33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mine_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="0"
+                    android:textColor="@color/color_orange"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mine_diamond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_grey_btn"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已完成数量"
+                    android:textColor="@color/c_33"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mine_diamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="0"
+                    android:textColor="@color/color_purple"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/all_orders"
+                style="@style/MineHomeText"
+                android:text="@string/basic_function"
+                android:textSize="14dp" />
+
+            <View style="@style/horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_ff"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_dispose"
+                        style="@style/MineHomeText_horizontal"
+                        android:drawableTop="@drawable/ic_launcher"
+                        android:text="@string/wait_dispose" />
+
+                    <TextView
+                        android:id="@+id/tv_dispose_num"
+                        style="@style/red_text"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_processing"
+                        style="@style/MineHomeText_horizontal"
+                        android:drawableTop="@drawable/ic_launcher"
+                        android:text="@string/wait_processing" />
+
+                    <TextView
+                        android:id="@+id/tv_processing_num"
+                        style="@style/red_text"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_redeploying"
+                        style="@style/MineHomeText_horizontal"
+                        android:drawableTop="@drawable/ic_launcher"
+                        android:text="@string/wait_redeploying" />
+
+                    <TextView
+                        android:id="@+id/tv_redeploying_num"
+                        style="@style/red_text"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_resolved"
+                        style="@style/MineHomeText_horizontal"
+                        android:drawableTop="@drawable/ic_launcher"
+                        android:text="@string/wait_resolved" />
+
+                    <TextView
+                        android:id="@+id/tv_resolved_num"
+                        style="@style/red_text"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

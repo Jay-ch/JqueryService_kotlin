@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tv_sign_record"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/c_ff"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="@dimen/dp_5"
+            android:gravity="center"
+            android:id="@+id/tv_sign_record_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:padding="@dimen/dp_5"
+            android:gravity="center"
+            android:id="@+id/tv_sign_record_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_handled_fault_one"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textSize="@dimen/dp_14" />
+
+
+        <TextView
+            android:padding="@dimen/dp_5"
+            android:gravity="center"
+            android:id="@+id/tv_sign_record_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_handled_fault_one"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+</LinearLayout>

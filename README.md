@@ -11,4 +11,3 @@ RxJava2 + Retrofit2 + OkHttp3 + rxlifecycle2修改成了kotlin。
 # ![故障页](https://github.com/Jay-ch/JqueryService_kotlin/blob/master/failt.jpg)
 # ![我的](https://github.com/Jay-ch/JqueryService_kotlin/blob/master/mine.jpg)
 # ![签到](https://github.com/Jay-ch/JqueryService_kotlin/blob/master/sigin.jpg)
-# ![通讯录](https://github.com/Jay-ch/JqueryService_kotlin/blob/master/address_book.jpg)
